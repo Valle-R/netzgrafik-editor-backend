@@ -14,11 +14,11 @@
     <description>Netzgrafik-Editor Backend</description>
 
     <properties>
-        <java.version>21</java.version>
+        <java.version>17</java.version>
 
         <!--Used for mvn flyway. See Readme. -->
         <!--suppress UnresolvedMavenProperty -->
-        <flyway.url>jdbc:postgresql://localhost/netzgrafikeditor</flyway.url>
+        <flyway.url>jdbc:postgresql://0.0.0.0/netzgrafikeditor</flyway.url>
         <!--suppress UnresolvedMavenProperty -->
         <flyway.user>netzgrafikeditor</flyway.user>
         <!--suppress UnresolvedMavenProperty -->
