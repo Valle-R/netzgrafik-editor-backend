@@ -18,7 +18,7 @@
 
         <!--Used for mvn flyway. See Readme. -->
         <!--suppress UnresolvedMavenProperty -->
-        <flyway.url>jdbc:postgresql://postgres-alm2/netzgrafikeditor</flyway.url>
+        <flyway.url>jdbc:postgresql://postgres-alm2:5432/netzgrafikeditor</flyway.url>
         <!--suppress UnresolvedMavenProperty -->
         <flyway.user>netzgrafikeditor</flyway.user>
         <!--suppress UnresolvedMavenProperty -->
