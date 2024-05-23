@@ -21,8 +21,8 @@ RUN mvn install -DskipTests -Dfmt.skip
 
 
 # Install Flyway
-RUN wget -qO- https://repo1.maven.org/maven2/org/flywaydb/flyway-commandline/7.7.3/flyway-commandline-7.7.3-linux-x64.tar.gz | tar xvz && \
-    ln -s `pwd`/flyway-7.7.3/flyway /usr/local/bin
+RUN wget -qO- https://repo1.maven.org/maven2/org/flywaydb/flyway-commandline/10.13.0/flyway-commandline-10.13.0-linux-x64.tar.gz | tar xvz && \
+    ln -s `pwd`/flyway-10.13.0/flyway /usr/local/bin
 
 # Add Flyway to the PATH
 ENV FLYWAY_HOME /flyway
