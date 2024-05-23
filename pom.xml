@@ -18,11 +18,11 @@
 
         <!--Used for mvn flyway. See Readme. -->
         <!--suppress UnresolvedMavenProperty -->
-        <flyway.url>${DB_URL}</flyway.url>
+        <flyway.url>jdbc:postgresql://0.0.0.0:5432/netzgrafikeditor</flyway.url>
         <!--suppress UnresolvedMavenProperty -->
-        <flyway.user>${DB_USER}</flyway.user>
+        <flyway.user>netzgrafikeditor</flyway.user>
         <!--suppress UnresolvedMavenProperty -->
-        <flyway.password>${DB_PASSWORD}</flyway.password>
+        <flyway.password>netzgrafikeditor</flyway.password>
         <springdoc-openapi.version>2.2.0</springdoc-openapi.version>
         <image.namespace>ghcr.io/schweizerischebundesbahnen</image.namespace>
         <image.version>${project.version}</image.version>
