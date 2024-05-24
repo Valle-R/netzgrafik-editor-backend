@@ -33,4 +33,4 @@ RUN mvn install -DskipTests -Dfmt.skip -Dflyway.skip=true
 
 # Run Flyway migrations
 # Run the application
-CMD mvn flyway:migrate && java -cp target/classes:target/dependency/* ch.sbb.pfi.netzgrafikeditor.NetzgrafikEditorBackendApplication
+CMD mvn flyway:migrate && mvn spring-boot:run
