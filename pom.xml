@@ -20,7 +20,7 @@
         <!--suppress UnresolvedMavenProperty -->
         <flyway.url>jdbc:postgresql://postgres-alm2/netzgrafikeditor</flyway.url>
         <!--suppress UnresolvedMavenProperty -->
-        <flyway.user>netzgrafik</flyway.user>
+        <flyway.user>netzgrafikeditor</flyway.user>
         <!--suppress UnresolvedMavenProperty -->
         <flyway.password>netzgrafikeditor</flyway.password>
         <springdoc-openapi.version>2.2.0</springdoc-openapi.version>
