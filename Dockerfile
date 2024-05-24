@@ -15,8 +15,10 @@ RUN apk add bash
 ENV MAVEN_HOME /usr/share/maven
 ENV PATH $MAVEN_HOME/bin:$PATH
 
+RUN echo "Test"
+
 # Build the project
-RUN mvn install -DskipTests -Dfmt.skip
+RUN mvn install -DskipTests -Dfmt.skip -Dflyway.skip=true
 
 
 
@@ -32,7 +34,5 @@ RUN mvn install -DskipTests -Dfmt.skip
 #COPY ./src/main/resources/db/migration /flyway/sql
 
 # Run Flyway migrations
-RUN mvn flyway:migrate
-
 # Run the application
-ENTRYPOINT ["java","-jar","/app.jar"]
+CMD mvn flyway:migrate && java -cp target/classes:target/dependency/* ch.sbb.pfi.netzgrafikeditor.NetzgrafikEditorBackendApplication
