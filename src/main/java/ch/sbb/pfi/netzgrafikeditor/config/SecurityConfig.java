@@ -65,6 +65,7 @@ public class SecurityConfig {
                                         // allow unauthenticated access to OpenAPI / Swagger
                                         .requestMatchers(
                                                 "/",
+                                                "/v1/health",
                                                 "/v3/api-docs/**",
                                                 "/swagger-ui/**",
                                                 "/swagger-ui.html")

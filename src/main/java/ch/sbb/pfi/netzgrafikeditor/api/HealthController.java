@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping(produces = MediaType.APPLICATION_JSON_VALUE)
 public class HealthController {
-  @GetMapping("/v1/health")
-  public HttpStatus healthCheck() {
-    return HttpStatus.OK;
-  }
+    @GetMapping("/v1/health")
+    public HttpStatus healthCheck() {
+        return HttpStatus.OK;
+    }
 }
