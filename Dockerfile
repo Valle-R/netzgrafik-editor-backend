@@ -15,8 +15,6 @@ RUN apk add bash
 ENV MAVEN_HOME /usr/share/maven
 ENV PATH $MAVEN_HOME/bin:$PATH
 
-RUN echo "Test"
-
 # Build the project
 RUN mvn install -DskipTests -Dfmt.skip -Dflyway.skip=true
 
